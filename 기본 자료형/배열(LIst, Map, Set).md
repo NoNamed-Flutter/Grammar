@@ -85,3 +85,25 @@
     names.remove(’Python;);
     
     print(names.contains(’Flutter’)) << true(Flutter가 있는지 확인)
+
+    - enum
+    
+    ```dart
+    enum Vsc {
+      Flutter,
+      Dart,
+      Python,
+    }
+    
+    void main() {
+      Vsc vsc = Vsc.Flutter;
+    	//enum '변수명' = enum.enum의변수명
+      if (vsc == Vsc.Flutter) {
+        print("Flutter입니다");
+      } else if (vsc == Vsc.Dart) {
+        print("Dart입니다");
+      } else {
+        print("Python");
+      }
+    }
+    ```
